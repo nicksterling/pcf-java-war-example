@@ -1,0 +1,6 @@
+---
+applications:
+- name: RESTHello
+  memory: 1G
+  random-route: true
+  path: target/RESTHello-1.0-SNAPSHOT.war
