@@ -1,2 +1,4 @@
+.settings
+.vscode
 *.iml
 .idea
