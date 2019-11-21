@@ -4,5 +4,8 @@ applications:
   memory: 1G
   random-route: true
   path: target/RESTHello-1.0-SNAPSHOT.war
+#  buildpacks:
+#  - https://github.com/cloudfoundry/java-buildpack.git
 #  env:
+#     JBP_CONFIG_TOMCAT: '{tomcat: { version: 7.+ }}'
 #    example_env_variable: 'Some Value Here'
