@@ -8,36 +8,9 @@
     <script src="/resources/jquery.min.js"></script>
     <script src="/resources/popper.min.js"></script>
     <script src="/resources/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-
-            var vcap_services = JSON.stringify(JSON.parse('<%= request.getAttribute("VCAP_SERVICES") %>'), null, 2);
-            $("#vcap_services").append(vcap_services);
-
-        });
-    </script>
 </head>
 <body>
 <header>
-    <%--<div class="collapse bg-dark" id="navbarHeader">--%>
-        <%--<div class="container">--%>
-            <%--<div class="row">--%>
-                <%--<div class="col-sm-8 col-md-7 py-4">--%>
-                    <%--<h4 class="text-white">About</h4>--%>
-                    <%--<p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>--%>
-                <%--</div>--%>
-                <%--<div class="col-sm-4 offset-md-1 py-4">--%>
-                    <%--<h4 class="text-white">Contact</h4>--%>
-                    <%--<ul class="list-unstyled">--%>
-                        <%--<li><a href="#" class="text-white">Follow on Twitter</a></li>--%>
-                        <%--<li><a href="#" class="text-white">Like on Facebook</a></li>--%>
-                        <%--<li><a href="#" class="text-white">Email me</a></li>--%>
-                    <%--</ul>--%>
-                <%--</div>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-    <%--</div>--%>
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container d-flex justify-content-between">
             <a href="#" class="navbar-brand d-flex align-items-center">
@@ -61,8 +34,6 @@
         </div>
 
         <hr/>
-
-        <%--<h2><%= request.getAttribute("example_env_variable") %></h2>--%>
 
         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">VCAP_SERVICES</button>
         <div id="demo" class="collapse">
