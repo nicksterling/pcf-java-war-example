@@ -17,6 +17,7 @@ public class HelloWorld extends HttpServlet {
             throws ServletException, IOException {
         InetAddress address = InetAddress.getLocalHost();
 
+//        req.setAttribute("example_env_variable", System.getenv("example_env_variable"));
         req.setAttribute("VCAP_SERVICES", System.getenv("VCAP_SERVICES"));
 
 

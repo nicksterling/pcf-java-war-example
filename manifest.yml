@@ -1,8 +1,8 @@
 ---
 applications:
-- name: RESTHello
+- name: pcf-java-war-example
   memory: 1G
   random-route: true
   path: target/RESTHello-1.0-SNAPSHOT.war
-  buildpacks:
-  - java_buildpack
+#  env:
+#    example_env_variable: 'Some Value Here'
